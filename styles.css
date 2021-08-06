@@ -1,8 +1,12 @@
+*{
+    box-sizing: border-box;
+}
 body{
-    max-width: fit-content;
+    max-width:max-content;
     margin: auto;
 }
-form{
+
+/* form{
     
     height: 100px;
     width: 500px;
@@ -35,4 +39,4 @@ div{
     border: #f4f4f4 solid ;
     margin-top: 10px;
     
-}
+} */
