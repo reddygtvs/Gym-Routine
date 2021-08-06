@@ -5,16 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Weight</title>
-    
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <form onsubmit="return returnWeight()">
-        <label for ="weight">Enter your maximum weight lifted for 1 rep to get your routine</label><br>
+    <form onsubmit="return returnWeight()" class="form-container">
+        <label for ="weight">Enter your maximum weight lifted for 1 rep to get your routine:</label><br><br>
         <input type="number" id="weight" name="weight"><br>
     </form>
-    <script src ="script.js"> </script>
-    <p id="message"></p>
+    <div>
+        <p id="message"></p>
 
-    <p id="output"></p>
+        <h3 id="week-heading1"></h3>
+        <p id="output1"></p>
+
+        <h3 id="week-heading2"></h3>
+        <p id="output2"></p>
+
+        <h3 id="week-heading3"></h3>
+        <p id="output3"></p>
+    </div>
+    
+    <script src ="script.js"> </script>
 </body>
 </html>

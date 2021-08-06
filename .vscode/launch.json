@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "c:\\Users\\anann\\Desktop\\trial xyz\\Gym-Routine",
+      "environment": [],
+      "program": "c:\\Users\\anann\\Desktop\\trial xyz\\Gym-Routine\\build\\Debug\\outDebug",
+      "internalConsoleOptions": "openOnSessionStart",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\Program Files (x86)\\mingw-w64\\mingw32\\bin\\gdb.exe",
+      "externalConsole": false
+    }
+  ]
+}
