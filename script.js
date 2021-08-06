@@ -52,6 +52,6 @@ function returnWeight() {
 function editArray(reps, percentages) {
     let n = reps.length;
     for (var i = 0; i < n; i++) {
-        reps[i] = reps[i] + Math.round(percentages[i]*weight) + " Kg";
+        reps[i] = reps[i] + (Math.floor(percentages[i] * weight / 5) * 5) + " Kg";
     }
 }
