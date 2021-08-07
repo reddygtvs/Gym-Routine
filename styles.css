@@ -45,6 +45,17 @@ p{
 #navbar ul li:hover{
     background: #273063;
 }
+
+/* .logo{
+    display: block;
+    max-height: 20px;
+    width: auto;
+    margin: 3px;
+    border-radius: 5%;
+}
+.logo:hover{
+    background: #273063;
+} */
 /* body{
     max-width:max-content;
     margin: 20px auto;

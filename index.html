@@ -11,33 +11,38 @@
 
     <header>
         <nav id="navbar">
-            <h1 class="logo"><a href="./index.html">GT</a></h1>
-            <a href='#'>clipart png from pngtree.com</a>
+            <h1 class="logo"><a href="./index.html">HBT</a></h1>
+            <!-- <a href='#'><img src="./images/logo_gym_routine.png.png" alt="gym-routine-logo" id="logo"></a> -->
             <ul>
                 <li><a href="#">Calculator</a></li>
                 <li><a href="#">Training Log</a></li>
             </ul>
         </nav>
     </header>
-
-    <form onsubmit="return returnWeight()" class="form-container">
-        <label for ="weight">Enter your maximum weight lifted for 1 rep to get your routine:</label><br><br>
-        <input type="number" id="weight" name="weight"><br>
-    </form>
-   
-    <div id="week-list-div">
-        <p id="message"></p>
-
-        <h3 id="week-heading1"></h3>
-        <p id="output1"></p>
-
-        <h3 id="week-heading2"></h3>
-        <p id="output2"></p>
-
-        <h3 id="week-heading3"></h3>
-        <p id="output3"></p>
-  
-    </div>
+    
+    <section id="rep-max-section">
+        <form onsubmit="return returnWeight()" class="form-container">
+            <label for ="weight">Enter your maximum weight lifted for 1 rep to get your routine:</label><br><br>
+            <input type="number" id="weight" name="weight"><br>
+        </form>
+       
+        <div id="week-list-div">
+            <p id="message"></p>
+    
+            <h3 id="week-heading1"></h3>
+            <p id="output1"></p>
+    
+            <h3 id="week-heading2"></h3>
+            <p id="output2"></p>
+    
+            <h3 id="week-heading3"></h3>
+            <p id="output3"></p>
+      
+        </div>
+    </section>
+    <section id="training-log-section">
+        <h3>something</h3>
+    </section>
     
     <script src ="script.js"> </script>
 
