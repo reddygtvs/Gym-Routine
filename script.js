@@ -1,7 +1,7 @@
 var weight;
 var document;
 var element = 0, c=0;
-
+//Check if origin main commmand works 
 
 function returnWeight() {
     weight = document.getElementById("weight").value;
