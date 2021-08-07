@@ -48,7 +48,6 @@ function returnWeight() {
     })
      return false;
 }
-
 function editArray(reps, percentages) {
     let n = reps.length;
     for (var i = 0; i < n; i++) {
