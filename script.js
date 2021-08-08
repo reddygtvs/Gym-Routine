@@ -4,6 +4,10 @@ var element = 0, c=0;
 
 
 function returnWeight() {
+    window.onscroll = function() {myFunction()};
+    var header = document.getElementById("navbar");
+    var sticky = header.offsetTop;
+
     weight = document.getElementById("weight").value;
     document.getElementById("message").innerHTML = "Hi there, your 1RM weight is: " + weight + "Kg";
     
@@ -47,6 +51,14 @@ function returnWeight() {
         list3.appendChild(li);
     })
      return false;
+}
+
+function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
 }
 function editArray(reps, percentages) {
     let n = reps.length;

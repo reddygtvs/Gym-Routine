@@ -6,10 +6,15 @@
 .clr{
     clear: both;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 /* Main Styling */
 html,body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.7em;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 2em;
     scroll-behavior: smooth; 
 }
 a{
@@ -25,16 +30,17 @@ p{
 /* Navbar Styling */
 #navbar{
     overflow: auto; 
-    font-size: 24px;
+    font-size: 18px;
 }
 #navbar a{
-    color: rgb(121, 18, 18);
+    color: #fff;
 }
 #navbar h1{
-    color: #fff;
+    color: #fff !important;
     float: left;
-    padding-top: 20px;
-    margin-left: 10px;
+    font-size: 40px;
+    padding-top: 30px;
+    margin-left: 30px;
 }
 #navbar ul{
     list-style: none;
@@ -45,7 +51,7 @@ p{
 }
 #navbar ul li a{
     display: block;
-    padding: 20px;
+    padding: 32px;
 }
 #navbar ul li:hover{
     text-decoration: underline;
@@ -58,7 +64,16 @@ section{
 }
 #home-page{
     color: #fff;
+    text-align: center;
+    padding-top: 180px;
 }
+#home-page h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 70px;
+}
+#home-page p{
+    font-size: 30px;
+} 
 #rep-max-section{
     background-color:rgb(166, 245, 255);
     padding-bottom: 5px;
@@ -67,10 +82,11 @@ section{
     background-color: rgb(255, 209, 209);
     padding-bottom: 5px;
 }
-/* Home page */
+/* Home page image styling */
 #bg-img{
-    background-image: url("./images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg");
-    min-height: 760px;
+    background-image: url("./images/pexels-victor-freitas-949126.jpg");
+    opacity: 80%;
+    min-height: 800px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -79,7 +95,7 @@ section{
 /* Footer styling */
 #main-footer{
     text-align: center;
-    background: #2b3673;
+    background: #2c2d33;
     color: #fff;
     padding: 20px;
 }
