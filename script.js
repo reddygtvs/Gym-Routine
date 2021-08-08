@@ -1,4 +1,6 @@
 var weight;
+var tempWeight;
+var reps;
 var document;
 var element = 0, c=0;
 //Check if origin main commmand works 
@@ -8,7 +10,9 @@ function returnWeight() {
     var header = document.getElementById("navbar");
     var sticky = header.offsetTop;
 
-    weight = document.getElementById("weight").value;
+    tempWeight = document.getElementById("weight").value;
+    reps = document.getElementById("reps").value;
+    calculateOneRepMax(tempWeight, reps);
     document.getElementById("message").innerHTML = "Hi there, your 1RM weight is: " + weight + "Kg";
     headingHTML();
     resetHTML();
@@ -52,7 +56,7 @@ function myFunction() {
 function editArray(reps, percentages) {
     let n = reps.length;
     for (var i = 0; i < n; i++) {
-        reps[i] = reps[i] + (Math.floor(percentages[i] * weight / 5) * 5) + " Kg";
+        reps[i] = reps[i] + (Math.floor(percentages[i] * weight / 2.5) * 2.5) + " Kg";
     }
 }
 function editAllArrays() {
@@ -71,4 +75,12 @@ function outputAllArrays() {
     outputEach(reps1, list1);
     outputEach(reps2, list2);
     outputEach(reps3, list3);
+}
+function calculateOneRepMax(tempWeight, reps) {
+    if (reps == 1) {
+        weight = tempWeight;
+    } else {
+        weight = Math.round(tempWeight * (1 + reps / 30));
+    }
+    
 }

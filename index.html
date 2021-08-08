@@ -30,9 +30,21 @@
     <section id="rep-max-section">
         <div class="rep-max-container">
             <form onsubmit="return returnWeight()" class="form-container">
-                <label for ="weight">Enter your maximum weight lifted for 1 rep to get your routine:</label><br><br>
-                <input type="number" id="weight" name="weight"><br>
+                <ul id="noDot">
+                    <li>
+                        <label for ="weight">Enter your maximum weight lifted:</label><br>
+                        <input type="number" id="weight" name="weight"><br>
+                    </li>
+                    <li>
+                        <label for="reps">Enter your maximum reps for that weight:</label><br>
+                        <input type="number" id="reps" name="reps"><br>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Get your routine</button>
+                    </li>
+                </ul>
             </form>
+            
        
             <div id="week-list-div">
                 <p id="message"></p>
