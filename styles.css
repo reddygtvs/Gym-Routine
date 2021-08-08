@@ -84,7 +84,8 @@ section{
 }
 .rep-max-container{
     background-color: #fff;
-    margin: 20px 30px;
+    margin: 50px 10px 10px 10px;
+    padding:110px 110px 110px 110px; 
 }
 #training-log-section{
     background-color: rgb(255, 209, 209);
@@ -95,6 +96,7 @@ section{
     background-image: url("./images/pexels-victor-freitas-949126.jpg");
     opacity: 80%;
     min-height: 200px;
+    max-height: 800px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
