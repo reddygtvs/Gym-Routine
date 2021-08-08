@@ -1,4 +1,5 @@
 var weight;
+var excercise;
 var tempWeight;
 var reps;
 var document;
@@ -10,10 +11,11 @@ function returnWeight() {
     var header = document.getElementById("navbar");
     var sticky = header.offsetTop;
 
+    excercise = document.getElementById("excercise").value;
     tempWeight = document.getElementById("weight").value;
     reps = document.getElementById("reps").value;
     calculateOneRepMax(tempWeight, reps);
-    document.getElementById("message").innerHTML = "Hi there, your 1RM weight is: " + weight + "Kg";
+    document.getElementById("message").innerHTML = "Hi there, your 1RM estimated weight is: " + weight + "Kg" + "<br />" + "Your routine for " + excercise + " is below:";
     headingHTML();
     resetHTML();
     initializeListHTML();
