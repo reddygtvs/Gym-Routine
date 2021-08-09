@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 .clr{
     clear: both;
@@ -31,6 +31,9 @@ p{
 #navbar{
     overflow: auto; 
     font-size: 18px;
+}
+#navbar .logo a{
+    color: maroon;
 }
 #navbar a{
     color: #fff;
