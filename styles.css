@@ -1,7 +1,11 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
+    background-color: #24252a;
+}
+li, a, buttion {
+    font-family:
 }
 .clr{
     clear: both;
