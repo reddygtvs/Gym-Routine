@@ -34,8 +34,8 @@ img{
     cursor: pointer;
     display: inline-block;
     padding: 10px 30px;
-    color: #fff;
-    background-color: #fff;
+    margin-top: 10px;
+    background-color: #000;
     border: none;
     border-radius: 5px;
 }
@@ -70,6 +70,10 @@ img{
 .navbar .logo{
     font-weight: 500;
 }
+/* Home page button */
+.button a{
+    font-size: 18px;
+}
 /* Header styling */
 .home-page{
     background: url("./images/pexels-victor-freitas-949126.jpg") no-repeat center center/cover;
@@ -103,11 +107,18 @@ img{
     height: 100vh;
     display: flex;
     width: 100%;
-
+    justify-content: space-around;
 }
 #rep-max-section form, #rep-max-section #week-list-div{
     background-color: honeydew;
     margin: 20px;
+    height: 100vh;
+    width: 50%;
+}
+/* Training log section */
+#training-log-section{
+    height: 100vh;
+    background-color: gray;
 }
 /* Footer styling */
 #main-footer{
