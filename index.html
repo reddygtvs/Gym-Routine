@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Weight</title>
     <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
+    <header class="home-page" id="home-page">
         <div id="navbar" class="navbar">
+            <h1 class="logo"><a href="./index.html">GT</a></h1>
             <nav>
-                <h1 class="logo"><a href="./index.html">GT</a></h1>
                 <ul>
                     <li><a href="#home-page">Home</a></li>
                     <li><a href="#rep-max-section">Calculator</a></li>
@@ -24,43 +24,40 @@
         <div class="content">
             <h1>Welcome</h1>
             <p>let's help you with your Gym Routine</p>
-            <button id="start"><a href="#rep-max-section">Let's get started</a></button>
+            <button class="button"><a href="#rep-max-section">Let's get started</a></button>
         </div>
     </header>
     
-   
-  
-    <div class="clr"></div>
-    <section id="rep-max-section">
-        <div class="rep-max-container">
-            <form onsubmit="return returnWeight()" class="form-container">
-                <label for ="weight">Enter your maximum weight lifted for 1 rep to get your routine:</label><br><br>
-                <input type="number" id="weight" name="weight"><br>
-            </form>
-       
-            <div id="week-list-div">
-                <p id="message"></p>
-    
-                <h3 id="week-heading1"></h3>
-                <p id="output1"></p>
-    
-                <h3 id="week-heading2"></h3>
-                <p id="output2"></p>
-    
-                <h3 id="week-heading3"></h3>
-                <p id="output3"></p>
-            </div>
-        </div>
-    </section>
-    <section id="training-log-section">
-        <h3>something</h3>
-    </section>
+    <div id="rep-max-section">
 
-    <div class="clr"></div>
+        <form onsubmit="return returnWeight()" class="form-container">
+            <label for ="weight">Enter your maximum weight lifted for 1 rep to get your routine:</label><br><br>
+            <input type="number" id="weight" name="weight"><br>
+        </form>
+   
+        <div id="week-list-div">
+            <p id="message"></p>
+
+            <h3 id="week-heading1"></h3>
+            <p id="output1"></p>
+
+            <h3 id="week-heading2"></h3>
+            <p id="output2"></p>
+
+            <h3 id="week-heading3"></h3>
+            <p id="output3"></p>
+        </div>
+    </div>
+    
+
+    <div id="training-log-section">
+        <h3>something</h3>
+    </div>
     
     <footer id="main-footer">
        <p>Gym Routine 2021, &#169 All Rights Reserved</p> 
     </footer>
+    
     <script src ="script.js"> </script>
 
 </body>

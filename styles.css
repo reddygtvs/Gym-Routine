@@ -10,6 +10,8 @@ body{
     background: #000;
     color: #fff;
     scroll-behavior: smooth; 
+    display: flex;
+    flex-direction: column;
 }
 ul{
     list-style: none;
@@ -28,57 +30,84 @@ p{
 img{
     width: 100%;
 }
+.button{
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color: rgb(247, 247, 247);
+}
 /* Navbar Styling */
 .navbar{
     display: flex;
     align-items: center; /*vertical alignment*/
-    justify-content: center; /*horizontal alignment*/
-}
-/* Section styling */
-section{
+    justify-content: space-between; /*horizontal alignment*/
+    background: rgb(65, 58, 58);
+    color: #fff;
+    opacity: 0.8;
     width: 100%;
-    height: 120vh;
-    float: center;
-} 
+    height: 70px;
+    position: fixed;
+    top: 0;
+    padding: 0 30px;
+}
+.navbar a{
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+.navbar a:hover{
+    border-bottom: #fff 2px solid;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar .logo{
+    font-weight: 500;
+}
+/* Header styling */
+.home-page{
+    background: url("./images/pexels-victor-freitas-949126.jpg") no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+.home-page .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    padding: 0 20px;
+}
+.home-page .content h1{
+    font-size: 75px;
+    font-family: 'Roboto', sans-serif;
+}
+.home-page .content p{
+    font-size: 26px;
+    max-width: 600px;
+    margin: 0px 20px;
+}
 /* Calculate Rep-max Styling */
 #rep-max-section{
     background-color:rgb(0, 0, 0);
     padding-bottom: 5px;
     color:#000;
     text-align: center;
+    height: 100vh;
+    display: flex;
+    width: 100%;
+
 }
-.rep-max-container{
-    background-color: #fff;
-    margin: 50px 10px 10px 10px;
-    padding:40px 110px 110px 110px; 
-}
-#training-log-section{
-    background-color: rgb(255, 209, 209);
-    padding-bottom: 5px;
-}
-#start{
-    margin-top: 30px;
-    padding: 10px;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    background: rgb(222, 219, 228);
-    border-radius: 5px;
-    border-style: none;
-    border: 1px solid #f4f4f4;
-}
-#home-page button a{
-    color: #000;
-}
-/* Home page image styling */
-#bg-img{
-    background-image: url("./images/pexels-victor-freitas-949126.jpg");
-    opacity: 80%;
-    min-height: 200px;
-    max-height: 800px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+#rep-max-section form, #rep-max-section #week-list-div{
+    background-color: honeydew;
+    margin: 20px;
 }
 /* Footer styling */
 #main-footer{
