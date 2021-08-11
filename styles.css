@@ -60,15 +60,6 @@ button:hover {
     list-style-type: none;
 }
 
-/* .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-.sticky + .content {
-    padding-top: 102px;
-  } */
-
 h1,h2,h3{
     padding: 20px;
 }
@@ -91,7 +82,7 @@ section{
     /* color: #fff; */
     background-color:cornsilk;
     text-align: center;
-    padding:10%;
+    padding:15%;
 }
 #home-page h1{
 
@@ -112,7 +103,7 @@ input {
   }
 #rep-max-section{
     background-color:lightcoral;
-    padding: 10%;
+    padding: 8%;
 
 }
 #rep-max-section p {
@@ -127,14 +118,18 @@ select {
 
 #training-log-section{
     background-color: lightgreen;
+    padding:5%;
     /* padding-bottom: 5px; */
+}
+#training-log-section h1 {
+    font-size: 70px;
 }
 
 /* Footer styling */
 
 #main-footer{
     text-align: center;
-    background-color:grey;
+    background-color:lightyellow;
     color:black;
-    padding: 20px;
+    padding: 5;
 }
