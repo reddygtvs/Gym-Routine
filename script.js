@@ -76,4 +76,3 @@ function calculateOneRepMax(tempWeight, reps) {
     }
     
 }
-

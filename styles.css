@@ -51,7 +51,11 @@ button {
     border-radius:50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    display:inline-block;
+    text-align: center;
+    /* margin: 0px 15px 0px 15px; */
 }
+
 button:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
@@ -80,7 +84,7 @@ section{
 /* Home Page Stying */
 #home-page{
     /* color: #fff; */
-    background-color:cornsilk;
+    background-color:lightsalmon;
     text-align: center;
     padding:15%;
 }
@@ -89,7 +93,7 @@ section{
     font-size: 70px;
 }
 #home-page p{
-    font-size: 30px;
+    font-size: 40px;
 }
 /* Calculate Rep-max Styling */
 input {
@@ -103,7 +107,7 @@ input {
   }
 #rep-max-section{
     background-color:lightcoral;
-    padding: 8%;
+    padding: 5%;
 
 }
 #rep-max-section p {
