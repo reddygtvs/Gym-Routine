@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Weight</title>
     <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet"> -->
 </head>
 <body>
     <div id="bg-img">
@@ -17,39 +17,40 @@
                 
 
                 <ul class = "nav__links">
-                    <li><a href="#home-page">Home</a></li>
+                    <li><a href="#bg-img">Home</a></li>
                     <li><a href="#rep-max-section">Calculator</a></li>
                     <li><a href="#training-log-section">Training Log</a></li>
                 </ul>
             </nav>
             <a class="cta" href="#"><button>Sign in</button></a>
         </header>
+    </div>
         
         
     </div id="Home">
         <section id="home-page">
-            <h1>Welcome</h1>
-            <p>let's help you with your Gym Routine</p>
-        </section
+            <h1>Welcome!</h1>
+            <p> Want a personalized workout plan based on your training max?</p>
+            <p>Let's help you with your Gym Routine</p>
+            <a class="cta" href="#rep-max-section"><button>Proceed</button></a>
+        </section>
     </div>
-    <div class="clr"></div>
+    
     <section id="rep-max-section">
         <div class="rep-max-container">
             <form onsubmit="return returnWeight()" class="form-container">
                 <ul id="noDot">
                     <li>
-                        <label for ="weight">Enter your maximum weight lifted:</label><br>
+                        <label for ="weight"><p>Enter your maximum weight lifted:</p></label><br>
                         <input type="number" id="weight" name="weight"><br>
                     </li>
                     <li>
-                        <label for="reps">Enter your maximum reps for that weight:</label><br>
+                        <label for="reps"><p>Enter your maximum reps for that weight:</p></label><br>
                         <input type="number" id="reps" name="reps"><br>
                     </li>
-                    <li class="button">
-                        <button type="submit">Get your routine</button>
-                    </li>
+                    
                     <li>
-                        <label for="excercise">Choose an excercise:</label><br>
+                        <label for="excercise"><p>Choose an excercise:</p></label><br>
 
                         <select name="excercises" id="excercise">
                           <option value="Deadlift">Deadlift</option>
@@ -57,6 +58,9 @@
                           <option value="Shoulder Press">Shoulder Press</option>
                           <option value="Squat">Squat</option>
                         </select> 
+                    </li>
+                    <li class="button">
+                        <button type="submit">Get your routine</button>
                     </li>
                 </ul>
             </form>
@@ -79,8 +83,6 @@
     <section id="training-log-section">
         <h3>something</h3>
     </section>
-
-    <div class="clr"></div>
     
     <footer id="main-footer">
        <p>Gym Routine 2021, &#169 All Rights Reserved</p> 

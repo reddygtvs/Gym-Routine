@@ -7,9 +7,6 @@ var element = 0, c=0;
 //Check if origin main commmand works 
 
 function returnWeight() {
-    window.onscroll = function() {myFunction()};
-    var header = document.getElementById("navbar");
-    var sticky = header.offsetTop;
 
     excercise = document.getElementById("excercise").value;
     tempWeight = document.getElementById("weight").value;
@@ -48,13 +45,6 @@ function resetHTML() {
     document.getElementById("output3").innerHTML = "";
 }
 
-function myFunction() {
-    if (window.pageYOffset > sticky) {
-      header.classList.add("sticky");
-    } else {
-      header.classList.remove("sticky");
-    }
-}
 function editArray(reps, percentages) {
     let n = reps.length;
     for (var i = 0; i < n; i++) {
@@ -86,3 +76,13 @@ function calculateOneRepMax(tempWeight, reps) {
     }
     
 }
+// window.onscroll = function() {myFunction()};
+// var header = document.getElementById("main-header");
+// var sticky = header.offsetTop;
+// function myFunction() {
+//   if (window.pageYOffset > sticky) {
+//     header.classList.add("sticky");
+//   } else {
+//     header.classList.remove("sticky");
+//   }
+// } 
