@@ -110,15 +110,17 @@ img{
     justify-content: space-around;
 }
 #rep-max-section form, #rep-max-section #week-list-div{
-    background-color: honeydew;
-    margin: 20px;
+    background-color: #f4f4f4;
+    margin: 10px 10px;
     height: 100vh;
     width: 50%;
+    border-radius: 5px;
 }
 /* Training log section */
 #training-log-section{
     height: 100vh;
     background-color: gray;
+    margin-top: 20px;
 }
 /* Footer styling */
 #main-footer{
