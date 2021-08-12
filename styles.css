@@ -40,8 +40,13 @@ img{
     border-radius: 5px;
 }
 .button:hover{
+    color: #000;
     background-color: rgb(247, 247, 247);
 }
+.button a:hover{
+    color: #000;
+}
+
 /* Navbar Styling */
 .navbar{
     display: flex;
