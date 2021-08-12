@@ -13,6 +13,8 @@ function returnWeight() {
     reps = document.getElementById("reps").value;
     calculateOneRepMax(tempWeight, reps);
     resetHTML();
+    document.getElementById("temp").innerHTML="";
+    document.getElementById("reset").innerHTML="Want to reset?"
     document.getElementById("message").innerHTML = "Hi there, your 1RM estimated weight is: " + weight + "Kg" + "<br />" + "Your routine for " + excercise + " is below:";
    
     headingHTML();
@@ -41,6 +43,8 @@ function headingHTML() {
     document.getElementById("week-heading3").innerHTML="Week 3";
 }
 function resetHTML() {
+    document.getElementById("reset").innerHTML="";
+    document.getElementById("temp").innerHTML="You're not supposed to be here! &#128517";
     document.getElementById("message").innerHTML ="";
     document.getElementById("week-heading1").innerHTML="";
     document.getElementById("week-heading2").innerHTML="";

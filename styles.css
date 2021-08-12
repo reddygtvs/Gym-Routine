@@ -62,6 +62,7 @@ button {
     transition: all 0.3s ease 0s;
     display:inline-block;
     text-align: center;
+    color:white;
     /* margin: 0px 15px 0px 15px; */
 }
 
