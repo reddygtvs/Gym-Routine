@@ -10,10 +10,11 @@
     /* background-color: #24252a; */
 
 }
+
 p {
     font-size:30px;
     color:black;
-    padding:20px;
+    padding:10px;
 }
 li, a, button {
     font-family: 'Poppins', sans-serif;
@@ -95,7 +96,7 @@ section{
     /* color: #fff; */
     background-color:lightsalmon;
     text-align: center;
-    padding:15%;
+    padding:10%;
 }
 #home-page h1{
 
@@ -103,6 +104,7 @@ section{
 }
 #home-page p{
     font-size: 40px;
+    padding:20px;
 }
 /* Calculate Rep-max Styling */
 input {
@@ -116,7 +118,7 @@ input {
   }
 #rep-max-section{
     background-color:lightcoral;
-    padding: 5%;
+    padding: 10%;
 
 
 }
@@ -145,6 +147,7 @@ select {
 }
 #training-log-section p {
     font-size: 30px;
+    padding: 20px;
 }
 #training-log-section div {
     display:flex;
