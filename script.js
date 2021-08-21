@@ -57,7 +57,13 @@ function resetHTML() {
 function editArray(reps, percentages) {
     let n = reps.length;
     for (var i = 0; i < n; i++) {
-        reps[i] = reps[i] + (Math.floor(percentages[i] * weight / 2.5) * 2.5) + " Kg";
+
+        if(excercise == 'Bench Press' || excercise == 'Shoulder Press')
+            reps[i] = reps[i] + ((Math.floor(percentages[i] * weight / 2.5) * 2.5) + 2.5) + " Kg";
+        else if(excercise == 'Squat')
+            reps[i] = reps[i] + ((Math.floor(percentages[i] * weight / 2.5) * 2.5) + 5) + " Kg";
+        else
+            reps[i] = reps[i] + (Math.floor(percentages[i] * weight / 2.5) * 2.5) + " Kg";
     }
 }
 function editAllArrays() {
