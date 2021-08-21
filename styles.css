@@ -31,13 +31,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
+    padding: 10px;
     background-color: #24252a;
     position:fixed;
     top:0;
     width:100%;
+    height: 12vh;
 }
 .logo {
+    margin-left: 20px;
     cursor: pointer;
 }
 
@@ -81,6 +83,19 @@ h1,h2,h3{
 }
 
 /* Section styling */
+.blank-section{
+    height: 12vh;
+    background-color: darkred;
+}
+#space-1{
+    background-color: lightsalmon;
+}
+#space-2{
+    background-color: lightcoral;
+}
+#space-3{
+    background-color: lightgreen;
+}
 section{
     display: flex;
     width: 100%;
@@ -89,7 +104,6 @@ section{
     justify-content: center;
     float: center;
     text-align: center;
-    /* position:absolute; */
 }
 /* Home Page Stying */
 #home-page{
@@ -99,7 +113,6 @@ section{
     padding:10%;
 }
 #home-page h1{
-
     font-size: 70px;
 }
 #home-page p{

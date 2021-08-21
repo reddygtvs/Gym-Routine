@@ -8,38 +8,35 @@
     <title>Gym Weight</title>
     <link rel="icon" href="./images/logo_gym_routine.png">
     <link rel="stylesheet" href="./styles.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
-    <div id="bg-img">
-        <header id="main-header">
-            <img class="logo" src="images/icons8-gym-50.png" alt="logo">
-            <nav id="navbar">
-                <!-- <h1 class="logo"><a href="./index.html">GT</a></h1> -->
 
+    <section class="blank-section" id="space-1"></section>
 
-                <ul class="nav__links">
-                    <li><a href="#bg-img">Home</a></li>
-                    <li><a href="#rep-max-section">Calculator</a></li>
-                    <li><a href="#training-log-section">Training Log</a></li>
-                </ul>
-            </nav>
-            <a class="cta" href="#"><button>Sign in</button></a>
-        </header>
+    <header id="main-header">
+        <img class="logo" src="images/icons8-gym-50.png" alt="logo">
+        <nav id="navbar">
+            <ul class="nav__links">
+                <li><a href="#space-1">Home</a></li>
+                <li><a href="#space-2">Calculator</a></li>
+                <li><a href="#space-3">Training Log</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Sign in</button></a>
+    </header>
+    
+
+    <div id="Home">
+        <section id="home-page">
+            <h1>Welcome! &#128170</h1>
+            <p> Want a personalized workout plan based on your training max?</p>
+            <p>Let's help you with your Gym Routine</p>
+            <a class="cta" href="#space-2"><button>Proceed</button></a>
+        </section>
     </div>
 
-
-    </div id="Home">
-    <section id="home-page">
-        <h1>Welcome! &#128170</h1>
-        <p> Want a personalized workout plan based on your training max?</p>
-        <p>Let's help you with your Gym Routine</p>
-        <a class="cta" href="#rep-max-section"><button>Proceed</button></a>
-    </section>
-    </div>
+    <section class="blank-section" id="space-2"></section>
 
     <section id="rep-max-section">
         <div class="rep-max-container">
@@ -77,15 +74,13 @@
                     
                     <a class="button" onclick="resetHTML()">
                         <button type=reset>Reset</button>
-                    </a>
-
-                
+                    </a>               
             </form>
-
-
-
         </div>
     </section>
+
+    <section class="blank-section" id="space-3"></section>
+
     <section id="training-log-section">
         <p id="message"></p>
         <div id="week-list-div">
@@ -106,7 +101,7 @@
         <h1 id="temp">You're not supposed to be here! &#128517</h1>
         <p id="reset"></p>
         <a>
-            <button onclick="window.location='index.html#rep-max-section';">Take me back</button>
+            <button onclick="window.location='index.html#space-2';">Take me back</button>
         </a>
     </section>
     <section id="more">
