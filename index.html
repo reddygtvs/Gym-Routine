@@ -15,6 +15,7 @@
 
 <body>
     <div id="bg-img">
+        <section>
         <header id="main-header">
             <img class="logo" src="images/icons8-gym-50.png" alt="logo">
             <nav id="navbar">
@@ -29,6 +30,7 @@
             </nav>
             <a class="cta" href="#"><button>Sign in</button></a>
         </header>
+        </section>
     </div>
 
 
@@ -108,6 +110,23 @@
         <a>
             <button onclick="window.location='index.html#rep-max-section';">Take me back</button>
         </a>
+        <form onsubmit="return nextWeek()" >
+            <ul id="noDot">
+                <li>
+                    <label for="next">
+                        <p>Succesfully completed all reps?</p>
+                    </label><br>
+
+                    <select name="next" id="next">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </li>
+            </ul>
+            <a>
+                <button type="submit" onclick="window.location='index.html#training-log-section';">Move to next session</button>
+            </a>
+        </form>
     </section>
     <section id="more">
         <h1>Want to contribute?</h1>
