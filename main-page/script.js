@@ -14,9 +14,7 @@ function returnWeight() {
     calculateOneRepMax(tempWeight, reps);
     resetHTML();
     document.getElementById("temp").innerHTML="";
-    document.getElementById("reset").innerHTML="Want to reset?";
-    document.getElementById("checklist").innerHTML="Make a checklist of your routine here:";
-    document.getElementById("checklist-button").innerHTML = "Get Routine";
+    document.getElementById("reset").innerHTML="Want to reset?"
     document.getElementById("message").innerHTML = "Hi there, your 1RM estimated weight is: " + weight + "Kg" + "<br />" + "Your routine for " + excercise + " is below:";
    
     headingHTML();
