@@ -1,4 +1,4 @@
-var weight;
+var weight = 0;
 var excercise;
 var tempWeight;
 var reps;
@@ -9,12 +9,12 @@ var check = 1;
 //Check if origin main commmand works 
 
 function returnWeight() {
-    
+    if (check == 1) {
     excercise = document.getElementById("excercise").value;
     tempWeight = document.getElementById("weight").value;
     reps = document.getElementById("reps").value;
-    
     calculateOneRepMax(tempWeight, reps);
+    }
     resetHTML();
     document.getElementById("temp").innerHTML="";
     document.getElementById("reset").innerHTML="Want to reset?"
@@ -82,8 +82,8 @@ function outputAllArrays() {
     outputEach(reps3, list3);
 }
 function calculateOneRepMax(tempWeight, reps) {
-    if (reps == 1) {
-        weight = tempWeight;
+    if (reps === '1') {
+        weight = Math.round(tempWeight);
     } else {
         weight = Math.round(tempWeight * (1 + reps / 30));
     }
@@ -91,22 +91,23 @@ function calculateOneRepMax(tempWeight, reps) {
 }
 function nextWeek() {
     next = document.getElementById("next").value;
-    if (next == "No") {
-        if (excercise == "Deadlift" || excercise == "Squat") {
+    if (next === "No") {
+        if (excercise === "Deadlift" || excercise === "Squat") {
             weight -= 5;
         } else {
             weight -= 2.5;
         }
     } else {
-        if (excercise == "Deadlift" || excercise == "Squat") {
+        if (excercise === "Deadlift" || excercise === "Squat") {
             weight += 5;
         } else {
             weight += 2.5;
         }
     }
-    document.getElementById("weight").value = weight;
-    document.getElementById("reps").value = 1;
+    // document.getElementById("weight").value = weight;
+    // document.getElementById("reps").value = 1;
     week += 3;
-    returnWeight();
     check = 0;
+    returnWeight();
+    return false;
 }
