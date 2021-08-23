@@ -45,6 +45,11 @@ function headingHTML() {
     document.getElementById("week-heading2").innerHTML="Week " + (week + 1);
     document.getElementById("week-heading3").innerHTML="Week " + (week + 2);
 }
+function resetAll() {
+    resetHTML();
+    week = 1;
+    check = 1;
+}
 function resetHTML() {
     //week = 1;
     document.getElementById("reset").innerHTML="";
