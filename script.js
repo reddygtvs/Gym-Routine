@@ -50,6 +50,11 @@ function resetAll() {
     week = 1;
     check = 1;
 }
+function printMain() {
+    resetAll();
+    returnWeight();
+    return false;
+}
 function resetHTML() {
     //week = 1;
     document.getElementById("reset").innerHTML="";
