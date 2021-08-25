@@ -4,24 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/dumbbells_adobespark.png">
+    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./checklist-style.css">
-    <title>Document</title>
+    <title>Checklist</title>
 </head>
 <body>
+  <section id="space-1"></section>
+  <section id="section-1">
+    <header id="main-header">
+      <a href="./index.html"><img class="logo" src="./images/dumbbells_adobespark.png" alt="logo"></a>
+      <nav id="navbar">
+          <ul class="nav__links">
+              <li><a href="./index.html">Back</a></li>
+              <li><a href="#space-1">Checklist</a></li>
+              <li><a href="#section-4">Performance</a></li>            
+          </ul>
+      </nav>
+      <a class="cta" href="#"><button>Sign in</button></a>
+    </header>
+  </section>
+
+  <section id="section-2">
     <div id="myDIV" class="header">
-        <h2>My To Do List</h2>
-        <input type="text" id="myInput" placeholder="Title...">
-        <span onclick="newElement()" class="addBtn">Add</span>
-      </div>
-      
-      <ul id="myUL">
-        <li>Hit the gym</li>
-        <li class="checked">Pay bills</li>
-        <li>Meet George</li>
-        <li>Buy eggs</li>
-        <li>Read a book</li>
-        <li>Organize office</li>
-      </ul>
+      <h2>My To Do List</h2>
+      <input type="text" id="myInput" placeholder="Title...">
+      <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+  </section>
+  
+  <section id="section-3">
+    <ul id="myUL">
+      <li>Hit the gym</li>
+      <li class="checked">Pay bills</li>
+      <li>Meet George</li>
+      <li>Buy eggs</li>
+      <li>Read a book</li>
+      <li>Organize office</li>
+    </ul>
+  </section>
+
+  <section id="section-4">
+    <p>Yet to create performance chart</p>
+    <a href="#space-1"><button>Back</button></a>
+  </section>
+  <footer id="checklist-footer">
+    <p>Gym Routine 2021, &#169 All Rights Reserved</p>
+  </footer>   
 </body>
 <script src="./checklist-script.js"></script>
+<script src="./script.js"></script>
 </html>
