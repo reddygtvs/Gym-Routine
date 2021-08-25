@@ -40,7 +40,7 @@
 
     <section id="rep-max-section">
         <div class="rep-max-container">
-            <form onsubmit="return returnWeight()" class="form-container">
+            <form onsubmit="return printMain()" class="form-container">
                 <ul id="noDot">
                     <li>
                         <label for="weight">
@@ -72,7 +72,7 @@
                         <button type="submit" onclick="window.location='index.html#training-log-section';">Get your routine</button>
                     </a>
                     
-                    <a class="button" onclick="resetHTML()">
+                    <a class="button" onclick="resetAll()">
                         <button type=reset>Reset</button>
                     </a>               
             </form>
@@ -105,6 +105,23 @@
         </a>
         <p id="routine-text"></p>
         <a href="./routine.html" target="_blank" id="routine-button"><button>Get Routine</button></a>
+        <form onsubmit="return nextWeek()" >
+            <ul id="noDot">
+                <li>
+                    <label for="next">
+                        <p>Succesfully completed all reps?</p>
+                    </label><br>
+
+                    <select name="next" id="next">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </li>
+            </ul>
+            <a>
+                <button type="submit" onclick="window.location='index.html#training-log-section';">Move to next session</button>
+            </a>
+        </form>
     </section>
     <section id="more">
         <h1>Want to contribute?</h1>

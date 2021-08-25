@@ -1,17 +1,20 @@
-var weight;
+var weight = 0;
 var excercise;
 var tempWeight;
 var reps;
 var document;
 var element = 0, c=0;
+var week = 1;
+var check = 1;
 //Check if origin main commmand works 
 
 function returnWeight() {
-
+    if (check == 1) {
     excercise = document.getElementById("excercise").value;
     tempWeight = document.getElementById("weight").value;
     reps = document.getElementById("reps").value;
     calculateOneRepMax(tempWeight, reps);
+    }
     resetHTML();
     document.getElementById("temp").innerHTML="";
     document.getElementById("reset").innerHTML="Want to reset?";
@@ -39,11 +42,22 @@ function initializeListHTML() {
     list3 = document.getElementById("output3");
 }
 function headingHTML() {
-    document.getElementById("week-heading1").innerHTML="Week 1";
-    document.getElementById("week-heading2").innerHTML="Week 2";
-    document.getElementById("week-heading3").innerHTML="Week 3";
+    document.getElementById("week-heading1").innerHTML="Week " + week;
+    document.getElementById("week-heading2").innerHTML="Week " + (week + 1);
+    document.getElementById("week-heading3").innerHTML="Week " + (week + 2);
+}
+function resetAll() {
+    resetHTML();
+    week = 1;
+    check = 1;
+}
+function printMain() {
+    resetAll();
+    returnWeight();
+    return false;
 }
 function resetHTML() {
+    //week = 1;
     document.getElementById("reset").innerHTML="";
     document.getElementById("temp").innerHTML="You're not supposed to be here! &#128517";
     document.getElementById("message").innerHTML ="";
@@ -85,10 +99,32 @@ function outputAllArrays() {
     outputEach(reps3, list3);
 }
 function calculateOneRepMax(tempWeight, reps) {
-    if (reps == 1) {
-        weight = tempWeight;
+    if (reps === '1') {
+        weight = Math.round(tempWeight);
     } else {
         weight = Math.round(tempWeight * (1 + reps / 30));
     }
     
+}
+function nextWeek() {
+    next = document.getElementById("next").value;
+    if (next === "No") {
+        if (excercise === "Deadlift" || excercise === "Squat") {
+            weight -= 5;
+        } else {
+            weight -= 2.5;
+        }
+    } else {
+        if (excercise === "Deadlift" || excercise === "Squat") {
+            weight += 5;
+        } else {
+            weight += 2.5;
+        }
+    }
+    // document.getElementById("weight").value = weight;
+    // document.getElementById("reps").value = 1;
+    week += 3;
+    check = 0;
+    returnWeight();
+    return false;
 }
