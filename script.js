@@ -74,7 +74,11 @@ function editArray(reps, percentages) {
     let n = reps.length;
     for (var i = 0; i < n; i++) {
             reps[i] = reps[i] + (Math.floor(percentages[i] * weight / 2.5) * 2.5) + " Kg";
+            // import { makeUL } from "./checklist-script";
+            // makeUL(reps[i]);
     }
+    
+    
 }
 function editAllArrays() {
     editArray(reps1, percentages1);

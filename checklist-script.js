@@ -27,10 +27,32 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
+var options = [1.2, 2.3, 4.5];
+function makeUL(array) {
+    // Create the list element:
+   var list = document.createElement('ul');
+
+    for(var i = 0; i < array.length; i++) {
+        // Create the list item:
+        var item = document.createElement('li');
+
+        // Set its contents:
+        item.appendChild(document.createTextNode(array[i]));
+
+        // Add it to the list:
+        list.appendChild(item);
+    }
+
+    // Finally, return the constructed list:
+    return list;
+}
+// Add the contents of options to #myUL:
+document.getElementById('myUL').appendChild(makeUL(options));
+
+
 // Create a new list item when clicking on the "Add" button
 function newElement() {
-  // import { outputEach } from "./script";
-  // outputEach(reps, list);
+
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
   var t = document.createTextNode(inputValue);
