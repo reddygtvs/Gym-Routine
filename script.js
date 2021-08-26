@@ -69,15 +69,10 @@ function resetHTML() {
     document.getElementById("output3").innerHTML = "";
 }
 
+
 function editArray(reps, percentages) {
     let n = reps.length;
     for (var i = 0; i < n; i++) {
-
-        if(excercise == 'Bench Press' || excercise == 'Shoulder Press')
-            reps[i] = reps[i] + ((Math.floor(percentages[i] * weight / 2.5) * 2.5) + 2.5) + " Kg";
-        else if(excercise == 'Squat')
-            reps[i] = reps[i] + ((Math.floor(percentages[i] * weight / 2.5) * 2.5) + 5) + " Kg";
-        else
             reps[i] = reps[i] + (Math.floor(percentages[i] * weight / 2.5) * 2.5) + " Kg";
     }
 }
@@ -91,7 +86,7 @@ function outputEach(reps, list) {
         let li = document.createElement("li");
         li.innerHTML = item;
         list.appendChild(li);
-    })
+    });
 }
 function outputAllArrays() {
     outputEach(reps1, list1);

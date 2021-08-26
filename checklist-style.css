@@ -16,17 +16,11 @@
   /* Style the list items */
   #section-3 ul li {
     cursor: pointer;
-    position: relative;
     padding: 12px 8px 12px 40px;
     background: rgb(255, 228, 228);
     font-size: 18px;
     transition: 0.2s;
-  
-    /* make the list items unselectable */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    z-index: -1;
   }
   /* body */
   body{
@@ -54,7 +48,6 @@
   /* Add a "checked" mark when clicked on */
   #section-3 ul li.checked::before {
     content: '';
-    /* position: absolute; */
     border-color: #fff;
     border-style: solid;
     border-width: 0 2px 2px 0;
@@ -103,12 +96,6 @@
     top: 0;
   }
   
-  /* Clear floats after the header */
-  .header:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
   
   /* Style the input */
   input {
