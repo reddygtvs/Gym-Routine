@@ -85,8 +85,11 @@ function editAllArrays() {
     editArray(reps2, percentages2);
     editArray(reps3, percentages3);
 }
+import { makeUL } from "./checklist-script.js";
 function outputEach(reps, list) {
+    
     reps.forEach((item) => {
+        makeUL(list);
         let li = document.createElement("li");
         li.innerHTML = item;
         list.appendChild(li);
