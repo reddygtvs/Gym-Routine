@@ -7,11 +7,15 @@
   font-family: "Poppins", sans-serif;
   color: black;
 }
-/* body {
-  display: grid;
-  height: 100vh;
-  grid-template-rows: auto 1fr auto;
-} */
+:target {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+#section {
+  scroll-margin-top: 150px;
+}
 html,
 body {
   height: 100%;
@@ -31,6 +35,7 @@ header {
   background: #24252a;
   padding: 1rem;
   height: 8vh;
+  position: fixed;
 }
 .nav__wrap {
   flex: 1;
@@ -60,7 +65,6 @@ header {
 p {
   font-size: 30px;
   color: black;
-  padding: 10px;
 }
 li,
 a,
@@ -71,6 +75,7 @@ button {
   color: black;
   text-decoration: none;
   list-style-type: none;
+  margin: 10px;
 }
 #output1 {
   color: black;
@@ -119,10 +124,10 @@ h3 {
 }
 #home-page h1 {
   font-size: 70px;
+  padding: 20px;
 }
 #home-page p {
   font-size: 40px;
-  padding: 20px;
 }
 /* Calculate Rep-max Styling */
 input {
@@ -136,7 +141,6 @@ input {
 }
 #rep-max-section {
   background-color: lightcoral;
-  padding: 10%;
 }
 #rep-max-section p {
   font-size: 30px;
@@ -159,16 +163,16 @@ select {
 
 #training-log-section h1 {
   font-size: 70px;
+  padding: 20px;
 }
 #training-log-section p {
   font-size: 30px;
-  padding: 20px;
 }
-#training-log-section div {
+/* #training-log-section div {
   display: flex;
   font-size: 30px;
   flex-direction: row;
-}
+} */
 #more {
   background-color: rgb(255, 0, 157);
   padding: 5%;
