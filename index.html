@@ -13,17 +13,17 @@
 
 <header id="main-header">
             <img class="logo" src="images/icons8-gym-50.png" alt="logo">
-            <div class="nav__wrapper">
+                <div class="nav__wrap">
                 <ul class="nav__links">
                     <li><a href="#home-page">Home</a></li>
                     <li><a href="#rep-max-section">Calculator</a></li>
-                    <li><a href="#training-log-section">Training Log</a></li>
+                    <li><a href="#training-log-section">Training</a></li>
                 </div>
                 </ul>
 </header>
 
 <main>
-    </div id="Home">
+    <div style="background-color: lightsalmon;" id="Home">
     <section id="home-page">
         <h1>Welcome! &#128170</h1>
         <p> Want a personalized workout plan based on your training max?</p>
@@ -32,8 +32,8 @@
     </section>
     </div>
 
-    <section id="rep-max-section">
-        <div class="rep-max-container">
+    <div style="background-color: lightsalmon;" class="rep-max-container">
+    <section id="rep-max-section"> 
             <form onsubmit="return returnWeight()" class="form-container">
                 <ul id="noDot">
                     <li>
@@ -68,15 +68,11 @@
                     
                     <a class="button" onclick="resetHTML()">
                         <button type=reset>Reset</button>
-                    </a>
-
-                
+                    </a>       
             </form>
-
-
-
-        </div>
+       
     </section>
+</div>
     <section id="training-log-section">
         <p id="message"></p>
         <div id="week-list-div">
