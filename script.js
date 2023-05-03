@@ -106,3 +106,8 @@ function calculateOneRepMax(tempWeight, reps) {
     weight = Math.round(tempWeight * (1 + reps / 30));
   }
 }
+
+function scrollToSection(sectionId) {
+  var section = document.getElementById(sectionId);
+  section.scrollIntoView({ behavior: "smooth" });
+}
