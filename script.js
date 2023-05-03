@@ -15,6 +15,7 @@ function returnWeight() {
   calculateOneRepMax(tempWeight, reps);
   resetHTML();
   document.getElementById("temp").innerHTML = "";
+  console.log("working? p2");
   document.getElementById("reset").innerHTML = "Want to reset?";
   document.getElementById("message").innerHTML =
     "Hi there, your 1RM estimated weight is: " +
@@ -34,6 +35,7 @@ function returnWeight() {
   percentages1 = [0.65, 0.75, 0.85];
   percentages2 = [0.7, 0.8, 0.9];
   percentages3 = [0.75, 0.85, 0.95];
+  console.log("working? p3");
 
   editAllArrays();
   outputAllArrays();
