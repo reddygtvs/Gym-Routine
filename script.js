@@ -13,7 +13,7 @@ function returnWeight() {
   tempWeight = document.getElementById("weight").value;
   reps = document.getElementById("reps").value;
   calculateOneRepMax(tempWeight, reps);
-  resetHTML();
+  reset();
   document.getElementById("temp").innerHTML = "";
   console.log("working? p2");
   document.getElementById("reset").innerHTML = "Want to reset?";
@@ -39,7 +39,7 @@ function returnWeight() {
 
   editAllArrays();
   outputAllArrays();
-  return;
+  return false;
 }
 function initializeListHTML() {
   list1 = document.getElementById("output1");
@@ -50,6 +50,17 @@ function headingHTML() {
   document.getElementById("week-heading1").innerHTML = "Week 1";
   document.getElementById("week-heading2").innerHTML = "Week 2";
   document.getElementById("week-heading3").innerHTML = "Week 3";
+}
+function reset() {
+  document.getElementById("reset").innerHTML = "";
+  document.getElementById("temp").innerHTML = "";
+  document.getElementById("message").innerHTML = "";
+  document.getElementById("week-heading1").innerHTML = "";
+  document.getElementById("week-heading2").innerHTML = "";
+  document.getElementById("week-heading3").innerHTML = "";
+  document.getElementById("output1").innerHTML = "";
+  document.getElementById("output2").innerHTML = "";
+  document.getElementById("output3").innerHTML = "";
 }
 function resetHTML() {
   document.getElementById("reset").innerHTML = "";
