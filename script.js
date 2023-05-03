@@ -39,7 +39,7 @@ function returnWeight() {
 
   editAllArrays();
   outputAllArrays();
-  return false;
+  return;
 }
 function initializeListHTML() {
   list1 = document.getElementById("output1");
