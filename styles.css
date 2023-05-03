@@ -7,25 +7,29 @@
   font-family: "Poppins", sans-serif;
   color: black;
 }
-:target {
-  display: block;
-  position: relative;
-  top: -100px;
-  visibility: hidden;
-}
-#section {
-  scroll-margin-top: 150px;
+section {
+  max-height: 100vh;
 }
 html,
 body {
   height: 100%;
   width: 100%;
+  margin: 0;
 }
 div {
-  height: 100vh;
+  max-height: 100vh;
   display: grid;
   place-items: center;
-  width: 100vw;
+}
+#Home {
+  min-height: 100vh;
+}
+.rep-max-container {
+  min-height: 100vh;
+}
+#training-container {
+  min-height: 100vh;
+  background: lightgreen;
 }
 
 header {
@@ -35,7 +39,6 @@ header {
   background: #24252a;
   padding: 1rem;
   height: 8vh;
-  position: fixed;
 }
 .nav__wrap {
   flex: 1;
@@ -168,11 +171,19 @@ select {
 #training-log-section p {
   font-size: 30px;
 }
-/* #training-log-section div {
+#training-log-section div {
   display: flex;
   font-size: 30px;
   flex-direction: row;
-} */
+}
+#week-list-div {
+  margin: 30px;
+}
+#week1,
+#week2,
+#week3 {
+  max-height: 10vh;
+}
 #more {
   background-color: rgb(255, 0, 157);
   padding: 5%;
@@ -180,14 +191,25 @@ select {
 #more h1 {
   font-size: 30px;
 }
-
+#training-container {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+#training-container > * {
+  margin: 40px;
+}
+#more {
+  min-width: 100vw;
+  text-align: center;
+}
 /* Footer styling */
 
 #main-footer {
   text-align: center;
   background-color: lightyellow;
   color: black;
-  padding: 5;
+  padding: 2vh;
 }
 #main-footer p {
   font-size: 20px;
