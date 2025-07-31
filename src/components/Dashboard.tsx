@@ -19,12 +19,12 @@ const Dashboard: React.FC<DashboardProps> = ({ appState }) => {
   
   const exercises: Exercise[] = ['squat', 'bench', 'deadlift', 'overhead_press'];
   
-  // Get recent workouts for each exercise
-  const getRecentWorkout = (exercise: Exercise) => {
-    return workouts
-      .filter(w => w.exercise === exercise)
-      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())[0];
-  };
+  // Get recent workouts for each exercise (currently unused)
+  // const getRecentWorkout = (exercise: Exercise) => {
+  //   return workouts
+  //     .filter(w => w.exercise === exercise)
+  //     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())[0];
+  // };
 
   // Calculate next session preview
   const getNextSessionPreview = (exercise: Exercise, week: WeekType) => {
@@ -62,7 +62,7 @@ const Dashboard: React.FC<DashboardProps> = ({ appState }) => {
         
         <div style={{ display: 'grid', gap: '16px' }}>
           {exercises.map((exercise) => {
-            const recentWorkout = getRecentWorkout(exercise);
+            // const recentWorkout = getRecentWorkout(exercise);
             const nextSession = getNextSessionPreview(exercise, normalizedWeek);
             
             // Check if this exercise is completed for the current week

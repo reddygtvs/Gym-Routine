@@ -55,8 +55,8 @@ const Workout: React.FC<WorkoutProps> = ({ appState, updateAppState }) => {
       const percentageMatch = acc.match(/@\s*(\d+(?:-\d+)?)%/);
       
       // Extract the exercise name (everything before the first number)
-      const nameMatch = acc.match(/^([^\d@]+)/);
-      const name = nameMatch ? nameMatch[1].trim() : acc;
+      // const nameMatch = acc.match(/^([^\d@]+)/);
+      // const name = nameMatch ? nameMatch[1].trim() : acc;
       
       return {
         name: acc, // Use the full text for display

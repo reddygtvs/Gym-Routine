@@ -55,20 +55,20 @@ const Progress: React.FC<ProgressProps> = ({ appState }) => {
     exerciseWorkouts.forEach(workout => {
       workout.mainSets.forEach(set => {
         if (set.percentage >= 0.85 && set.actualReps > set.targetReps) {
-          const estimatedMax = estimateOneRepMax(set.weight, set.actualReps);
-          if (!bestAmrap || estimatedMax > bestAmrap.estimatedMax) {
+          const setEstimatedMax = estimateOneRepMax(set.weight, set.actualReps);
+          if (!bestAmrap || setEstimatedMax > bestAmrap.estimatedMax) {
             bestAmrap = {
               weight: set.weight,
               reps: set.actualReps,
               date: new Date(workout.date),
-              estimatedMax
+              estimatedMax: setEstimatedMax
             };
           }
         }
       });
     });
 
-    const estimatedMax = bestAmrap?.estimatedMax || user.trainingMaxes[exercise] / 0.9;
+    const estimatedMax = bestAmrap ? (bestAmrap as { estimatedMax: number }).estimatedMax : user.trainingMaxes[exercise] / 0.9;
 
     return {
       totalSessions: exerciseWorkouts.length,

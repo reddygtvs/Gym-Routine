@@ -6,7 +6,7 @@ interface HeaderProps {
   user: UserProfile;
 }
 
-const Header: React.FC<HeaderProps> = ({ user }) => {
+const Header: React.FC<HeaderProps> = () => {
   const location = useLocation();
 
   const navItems = [
