@@ -1,119 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gym Routine</title>
-    <link rel="icon" href="./images/logo_gym_routine.png">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="script.js"> </script>
-    
-</head>
-
-<header id="main-header">
-            <img class="logo" src="images/icons8-gym-50.png" alt="logo">
-                <div class="nav__wrap">
-                <ul class="nav__links">
-                    <li><a href="#home-page">Home</a></li>
-                    <li><a href="#rep-max-section">Calculator</a></li>
-                    <li><a href="#training-log-section">Training</a></li>
-                </div>
-                </ul>
-</header>
-
-<main>
-    <div style="background-color: lightsalmon;" id="Home">
-    <section id="home-page">
-        <h1>Welcome! &#128170</h1>
-        <p> Want a personalized workout plan based on your training max?</p>
-        <p>Let's help you with your Gym Routine</p>
-        <a class="cta" href="#rep-max-section"><button>Proceed</button></a>
-    </section>
-    </div>
-
-    <div style="background-color: lightcoral;" class="rep-max-container">
-    <section id="rep-max-section"> 
-            <form  onsubmit="return returnWeight()" class="form-container">
-                <ul id="noDot">
-                    <li>
-                        <label for="weight">
-                            <p>Enter your maximum weight lifted:</p>
-                        </label><br>
-                        <input type="number" id="weight" name="weight"><br>
-                    </li>
-                    <li>
-                        <label for="reps">
-                            <p>Enter your maximum reps for that weight:</p>
-                        </label><br>
-                        <input type="number" id="reps" name="reps"><br>
-                    </li>
-
-                    <li>
-                        <label for="excercise">
-                            <p>Choose an excercise:</p>
-                        </label><br>
-
-                        <select name="excercises" id="excercise">
-                            <option value="Deadlift">Deadlift</option>
-                            <option value="Bench Press">Bench Press</option>
-                            <option value="Shoulder Press">Shoulder Press</option>
-                            <option value="Squat">Squat</option>
-                        </select>
-                    </li>
-                    </ul>
-                    <a>
-                        <button type="submit"  onclick="window.location.href='#training-log-section'">Get your routine</button>
-                        
-                    </a>
-                    
-                    
-            </form>
-            <a class="button" onclick="resetHTML()">
-                <button type=reset>Reset</button>
-            </a>       
-    </section>
-</div>
-<div id="training-container">
-    <section id="training-log-section">
-        <p id="message"></p>
-        <div id="week-list-div">
-            
-            <section id="week-1">
-                <h3 id="week-heading1"></h3>
-                <p id="output1"></p>
-            </section>
-            <section id="week-2">
-                <h3 id="week-heading2"></h3>
-                <p id="output2"></p>
-            </section>
-            <section id="week-3">
-                <h3 id="week-heading3"></h3>
-                <p id="output3"></p>
-            </section>
-        </div>
-        <h1 id="temp">You're not supposed to be here! &#128517</h1>
-        <p id="reset"></p>
-        <a>
-            <button type="button" onclick="window.location='index.html#rep-max-section';">Take me back</button>
-        </a>
-    
-    </section>
-</div>
-<div id="know-more">
-    <section id="more">
-        <h1>Want to contribute?</h1>
-        <a class="cta" href="https://tusharreddy.com" target="_blank" rel="noopener noreferrer"><button>Take me
-                there</button></a>
-    </section>
-    </div>
-    
-
-</main>
-<footer id="main-footer">
-    <p>Gym Routine 2021, &#169 All Rights Reserved</p>
-</footer>
-
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/logo_gym_routine.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5/3/1 Gym Routine</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
