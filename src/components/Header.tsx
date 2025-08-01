@@ -21,14 +21,17 @@ const Header: React.FC<HeaderProps> = () => {
       backgroundColor: 'rgb(17, 17, 16)',
       position: 'sticky',
       top: 0,
-      zIndex: 1000
+      zIndex: 1000,
+      display: 'block'
     }}>
       <div className="container-content" style={{
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
         padding: '12px 16px',
-        minHeight: '56px'
+        minHeight: '56px',
+        maxWidth: 'none',
+        margin: '0'
       }}>
         <Link 
           to="/dashboard" 
@@ -54,7 +57,8 @@ const Header: React.FC<HeaderProps> = () => {
               fontSize: '18px', 
               fontWeight: 600,
               whiteSpace: 'nowrap',
-              flexShrink: 0
+              flexShrink: 0,
+              lineHeight: 1
             }}
           >
             5/3/1 Routine
